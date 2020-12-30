@@ -1,0 +1,14 @@
+
+footer {
+    background-color: white;
+    height: 40vh;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.link{
+    padding: 1rem;
+}

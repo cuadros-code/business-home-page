@@ -1,0 +1,123 @@
+.about-content {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0082e6;
+    display: flex;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    display: flex;
+    padding-left: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    justify-content: center;
+}
+
+.right .title-about {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 1rem;
+    width: 130px;
+    border-radius: 10px;
+    background-color: #5C91F0;
+}
+
+.left img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    margin: auto;
+    align-content: center;
+    backface-visibility: hidden;
+    transition: all .5s ease-in-out;
+}
+
+.right h1 {
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.p {
+    text-align: justify;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+
+}
+
+.left .image:hover {
+
+    transform: scale(1.10, 1.10);
+}
+
+.button-about-home {
+    width: 140px;
+    height: 55px;
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+    font-size: 0.9rem;
+  transition: background-color 0.3s linear;
+}
+
+.button-about-home:focus {
+    outline: none;
+}
+
+.button-about-home:hover {
+    background-color: deeppink;
+    color: white;
+    border: none;
+}
+
+.right ul{
+    margin-bottom: 2rem;
+}
+
+.list p{
+   display:list-item;
+   align-items: flex-start;
+}
+.list{
+    padding-inline: inherit;
+    padding-bottom: 1rem;
+}
+.item{
+    padding-left: 0px;
+    text-align-last: start;
+}
+
+@media ( max-width: 800px ){
+    .about-content {
+        width: 100vw;
+        padding: 1rem;
+        height: 80vh;
+        background-color: #0082e6;
+        /* display: inline-block; */
+    }
+    
+    .left{
+        display: none;
+    }
+
+    .right{
+        display: block;
+    }
+    .right li {
+        display: list-item;
+    }
+    .list {
+        /* display:list-item; */
+        /* list-style-type: disc; */
+        /* list-style-position: unset; */
+    }
+}
